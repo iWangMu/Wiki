@@ -1,0 +1,73 @@
+{
+    // 粘贴和保存时，自动格式化
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'Courier New', 'Fira Code', Menlo, Monaco, monospace",
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 15,
+    "editor.fontLigatures": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": true,
+    "editor.minimap.side": "right",
+    // 是否展示Tab
+    "workbench.editor.showTabs": false,
+    // 文件编码
+    "files.encoding": "utf8",
+    // 不展示的文件
+    "files.exclude": {
+        "**/.ipynb_checkpoints": true,
+        "**/.vscode": true
+    },
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "editor.detectIndentation": false,
+
+    // Prettier: https://github.com/prettier/prettier-vscode#prettierconfigpath
+    "[json][yaml][javascript][html][css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    /** 
+    * ****************************** Prettier配置: https://prettier.io/docs/en/options ******************************
+    * 当项目中存在[Prettier配置文件](https://prettier.io/docs/en/configuration.html)(i.e: .prettierrc)，则下面的配置将不生效
+    */
+    // 
+    // 每行代码
+    "prettier.printWidth": 80,
+    // 制表符和缩进
+    "prettier.useTabs": false,
+    "prettier.tabWidth": 2,
+    // 使用单引号而不是双引号
+    "prettier.singleQuote": true,
+    // JSX中使用单引号而不是双引号
+    "prettier.jsxSingleQuote": true,
+    // 在所有代码语句的末尾添加分号
+    "prettier.semi": true,
+    // 指定添加尾后逗号的方式: none, es5, all
+    "prettier.trailingComma": "es5",
+    // 在对象字面量的花括号内侧使用空格作为间隔
+    "prettier.bracketSpacing": true,
+    // 对象字面量中的属性名引号添加方式: as-needed, consistent, preserve
+    "prettier.quoteProps": "as-needed",
+    // 箭头函数仅有一个参数时，参数是否添加括号
+    "prettier.arrowParens": "always",
+    // 会在 HTML、JSX、Vue 和 Angular 中格式化为每个属性单独占一行
+    "prettier.singleAttributePerLine": true,
+    // 把多行的 HTML (包括HTML、JSX、Vue和Angular)元素的 `>` 放在最后一个属性的末尾，而不是另起一行
+    "prettier.bracketSameLine": false,
+    // HTML 文件的空白字符敏感度: css, strict, ignore
+    "prettier.htmlWhitespaceSensitivity": "css",
+    // 缩进 Vue SFC 文件中的 `<script>` 和 `<style>` 标签
+    "prettier.vueIndentScriptAndStyle": true,
+    // 控制嵌入的其他语言代码格式化: off, auto
+    "prettier.embeddedLanguageFormatting": "auto",
+    // 指定 Prettier 使用的换行符: lf(\n), crlf(\r\n), cr(\r), auto
+    "prettier.endOfLine": "lf",
+    // Prettier 可以限制只对包含特定注释的文件进行格式化，这个特定的注释为`@prettier`或`@format`
+    "prettier.insertPragma": false,
+    // Prettier 可以在文件头部插入特定的 `@format` 标记以表示该文件已被 Prettier 格式化过
+    "prettier.requirePragma": false,
+    // ****************************** Prettier配置 ******************************
+}
